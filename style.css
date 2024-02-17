@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+:root{
+    --primary-color:#e81922;
+    --secondary-color:rgb(45, 43, 43);
+    --bg-black:#111111;
+    --bg-dark:#1C1819;
+    --bg-white:#fff;
+    --bg-gray:#e5e5e5;
+
+    --primary-text:#e81922;
+    --text-white:#fff;
+    --text-black:#111111;
+}
+
+body{
+    background-color: var(--bg-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 1 custom css */
+::-webkit-scrollbar{
+    width:6px;
+}
+
+/* ::-webkit-scrollbar-track{
+    background: var(--bg-dark-blue);
+} */
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+/* .header-wrapper .navbar{
+    border: 2px solid black;
+    height: 100px;
+    background-color: var(--bg-gray);
+    position: fixed;
+} */
+
+.header-wrapper .nav-item{
+    padding: 15px 0;
+    -webkit-transition: all.2s linear;
+    -o-transition:all.2s linear ;
+    -moz-transition: all.2s linear;
+    transition:all.2s linear ;
+}
+
+.header-wrapper .nav-item .nav-link{
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--bg-black);
+    display: inline-block;
+}
+
+.header-wrapper .nav-item .nav-link.active,
+.header-wrapper .nav-item .nav-link:hover{
+    color: var(--primary-text);
+}
+
+.header-wrapper.navbar-brand img{
+    max-width: 100px;
+    height: auto;
+}
+
+.header-scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    background-color: var(--bg-white);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46,.05);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46,.05);
+}
+
+/* banner */
+section{
+    padding: 50px 0;
+}
+
+.main-btn{
+    display: inline-block;
+    border: 1PX solid var(--primary-color);
+    border-radius: 50PX;
+    padding: 8PX 20PX;
+    color: var(--primary-text);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right,var(--primary-color)50%,transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+}
+.main-btn:hover{
+    color: var(--text-white);
+    background-position: left bottom;
+}
+
+#banner{
+    height: 80vh;  
+}
+h1{
+    font-size: 65px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--bg-black);
+    margin-bottom: 20px;
+}
+
+h1 span{
+    color: var(--primary-color);
+}
+
+/* h2{
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: var(--bg-black);
+} */
+
+h3{
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--bg-black);
+}
+
+h5{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-text);
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: var(--bg-black);   
+}
+
+
+
+/* .banner-wrapper .row video{
+   
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+    background-clip: border-box;
+    background-size: cover;
+} */
+
+
+
+.banner-wrapper{
+    padding-top: 100px;
+    height: auto;
+    width: 100%;    
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.backgrount-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+   
+}
+
+
+
+.banner-wrapper .top-menu .card{
+    height: 275px;
+    overflow: hidden;
+    cursor: pointer;
+   
+}
+
+.banner-wrapper .top-menu .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms ease;
+}
+
+.banner-wrapper .top-menu .card img:hover{
+    transform: scale(1.1);
+}
+
+/* about us */
+.about-wrapper{
+    background-color: var(--bg-gray);
+    /* padding-bottom: 130px; */
+}
+
+.about-wrapper .card{
+    z-index: 10;
+    right: -25%;
+    top: 30%;
+    margin-top: 30px;
+  
+}
+
+
+/* menu */
+.menu-wrapper{
+    height: auto;
+    width: 100%;
+    background-image: url("images/food-menu-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: var(--bg-black);
+}
+
+.menu-wrapper .row{
+    padding-top: 400px;
+}
+   
+.menu-wrapper .card{
+    background-color: var(--secondary-color);
+}
+
+.menu-wrapper .card h3,
+.menu-wrapper .card p{
+    color: var(--text-white);
+}
+
+.menu-wrapper .card h3 span{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display:inline-block ;
+    text-align: center;
+    font-size: 40px;
+    line-height: 58px;
+    margin-right: 20px;
+}
+
+.offers-wrapper .card{
+    height: 100%;
+    min-height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% ;
+}
+
+.offers-wrapper .card .offer-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* review */
+.review-wrapper{
+    width: 100%;
+    height: auto;
+    background-image: url('images/review-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.review-wrapper .carousel-item{
+    min-height: 500px;
+    height: 100%;
+   
+    border: 2px solid red;
+}
+
+.review-wrapper .carousel-item img{
+    width: 65px;
+    /* margin-bottom: 20px; */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev {
+    filter: brightness(0.10);
+}
+
+/* footer */
+.footer-wrapper{
+    background-color: var(--bg-gray);
+    padding: 20px 0;
+}
+
+.footer-wrapper .footer-logo img{
+    width: 100px;
+}
+
+.footer-wrapper .social-icon li{
+    margin: 6px;
+}
+
+.footer-wrapper .social-icon a{
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid var(--bg-black);
+    color: var(--text-black);
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.645,0.045.0.335,1);
+    transition:all 0.3s cubic-bezier(0.645,0.045.0.335,1);   
+}
+
+.footer-wrapper .social-icon a:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--bg-white);
+    box-shadow: 0 10px 15px 0 rgb(0 0 0 /100);
+    transform: translateY(-3px);
+}
+
+.copyright-text p{
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.copyright-text a{
+    color: var(--primary-text);
+}

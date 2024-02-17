@@ -1,0 +1,117 @@
+@media(max-width:1199px){
+    h1{
+        font-size: 65px;
+    }
+    .about-wrapper .card{
+        margin-top:unset;
+    }
+
+    /* backgrount-clip{
+        b
+    } */
+}
+
+@media(max-width:991px){
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+   
+    h3{
+            font-size: 20px;
+        }
+   
+    /* navbar */
+    .header-wrapper .navbar-brand img{
+    max-width: 67px;
+    }
+
+    .header-scrolled{
+        height: auto;
+    }
+
+    .header-wrapper .navbar-collapse{
+        margin-top: 2px;
+    }
+
+    .header-wrapper .menu-navbar-nav{
+        text-align: center;
+        background-color: var(--bg-white);
+    }
+    
+    /* banner */
+    .banner-wrapper .top-menu .card{
+        height: 200px;
+       
+    }
+
+    /* about */
+    .about-wrapper .card{
+        right:unset;
+        top: unset;   
+    }
+
+   /* menu */
+   .menu-wrapper .row{
+    padding-top: 40px;
+}
+
+/* .offers */
+
+.offers-wrapper .card{
+    min-height: 200px;
+}
+
+/* .review-wrapper .card{
+    min-height: 400px;
+    width: 300px;
+    border: 2px solid black;
+}
+.review-wrapper .carousel-caption{
+    bottom: 0;
+} */
+}
+       
+   
+
+@media(max-width:767px){
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .menu-wrapper .card h3 span{
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        margin-right: 20px;
+    }
+
+
+    /* review */
+    .review-wrapper .carousel-caption{
+        bottom: 0;
+    }
+    .review-wrapper .carousel-item{
+        min-height: 460px;
+    }
+    
+} 
+
+@media (min-aspect-ratio:14/16){
+    .backgrount-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:14/19){
+    .backgrount-clip{
+        width: auto;
+        height: 100%;
+    }
+}
