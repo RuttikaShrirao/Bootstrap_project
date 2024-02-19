@@ -1,3 +1,3 @@
-This is an Food Landing page.<br>
-# Technology- HTML, CSS, JavaScript, and Bootstrap.<br>
-This is Responsive website.
+This is a Food Landing page.<br>
+ HTML, CSS, JavaScript, and Bootstrap.<br>
+This is a Responsive website.
